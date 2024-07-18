@@ -5,7 +5,7 @@ import preprocess from 'svelte-preprocess'
 const config = {
 	preprocess: preprocess({
 		scss: {
-			prependData: '@use "../styles/functions";'
+			prependData: '@use "../styles/functions";	@use "@unsass/breakpoint";'
 		}
 	}),
 

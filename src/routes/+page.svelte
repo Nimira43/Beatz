@@ -1,10 +1,20 @@
 <h1>Beatz</h1>
 
+<input />
+<select>
+  <option>Option</option>
+</select>  
+<button>Button</button>
+
 <style lang="scss">
   
   h1 {
-    background-color: #111;
-    color: orangered;
     font-size: functions.toRem(36);
+    @include breakpoint.up('md') {
+      color: gold;
+    }
+    @include breakpoint.up('lg') {
+      color: red;
+    }
   }
 </style>
