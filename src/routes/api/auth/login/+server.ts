@@ -19,8 +19,9 @@ const scope = 'ugc-image-upload user-modify-playback-state user-read-playback-st
 
 
 export const GET: RequestHandler = () => {
-  throw redirect(307, `https://accounts.spotify.com/authorize?${
-    new URLSearchParams({
+  throw redirect(
+    307,
+    `https://accounts.spotify.com/authorize?${new URLSearchParams({
       response_type: 'code',
       client_id: SPOTIFY_APP_CLIENT_ID,
       scope,
@@ -28,6 +29,6 @@ export const GET: RequestHandler = () => {
       state,
       code_challenge_method: 'S256',
       code_challenge: challenge.code_challenge
-    })
-  }`)
+    })}`
+  )
 }
