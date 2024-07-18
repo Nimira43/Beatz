@@ -69,19 +69,21 @@ h6 {
 
 p {
   font-size: functions.toRem(16);
+  font-weight: 200;
   line-height: 1.7;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 a {
-  color: var(--skyb);
+  color: var(--ligh);
   cursor: pointer;
 }
 
 button, select {
   background-color: var(--main);
   padding: 5px 10px;
+  font-weight: 200;
   color: var(--ligh);
   border-radius: 5px; 
 }
@@ -99,6 +101,7 @@ input {
   background: transparent;
   padding: 5px 10px;
   color: var(--ligh);
+  font-weight: 200;
   border: 1px solid var(--main);
   border-radius: 5px;
 }
