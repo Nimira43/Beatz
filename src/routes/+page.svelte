@@ -1,5 +1,5 @@
 <h1>Beatz</h1>
-
+<p><a href="https://github.com/Nimira43/Beatz">by NimiraTech</a></p>
 <input />
 <select>
   <option>Option</option>

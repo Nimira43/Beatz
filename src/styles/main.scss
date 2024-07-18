@@ -2,34 +2,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  user-select: none;
+}
+
 :root {
-  --bgr: #222;
-  --sba: #010101;
-  --hea: #010101;
-  --txt: #ff4500; 
-  --acc: #22ec22;
-  --sky: #87ceeb;
-  --meb: #333;
-  --lgg: #aaa;
-  --mdg: #333;
-  --dkg: #181818;
-  --mtx: #ff4500;
-  --bor: rgba(255, 255, 255, 0.15);
-  --sbw: 250px;
-  --hdh: 64px;
-  --err: #c70c0c;
-  --war: #ffd500;
+  --bkgr: #111;
+  --sbar: #010101;
+  --head: #010101;
+  --main: #ff4500;
+  --ligh: #eee; 
+  --acce: #22ec22;
+  --skyb: #87ceeb;
+  --menu: #333;
+  --lggr: #aaa;
+  --mdgr: #333;
+  --dkgr: #181818;
+  --mntx: #ff4500;
+  --bord: rgba(255, 255, 255, 0.15);
+  --sbwd: 250px;
+  --hdhg: 64px;
+  --erro: #c70c0c;
+  --warn: #ffd500;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--bgr);
-  color: var(--txt);
-}
-
-::selection {
-  background-color: var(--sky); /* was acc */
-  color: var(--txt);
+  background-color: var(--bkgr);
+  color: var(--main);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -71,5 +75,30 @@ p {
 }
 
 a {
-  color: var(--sky);
+  color: var(--skyb);
+  cursor: pointer;
+}
+
+button, select {
+  background-color: var(--main);
+  padding: 5px 10px;
+  color: var(--ligh);
+  border-radius: 5px; 
+}
+
+select {
+  appearance: none;
+}
+
+select option {
+  background-color: var(--ligh);
+  color: var(--main);
+}
+
+input {
+  background: transparent;
+  padding: 5px 10px;
+  color: var(--ligh);
+  border: 1px solid var(--main);
+  border-radius: 5px;
 }
